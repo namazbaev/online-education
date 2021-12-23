@@ -42,6 +42,23 @@ section {
   padding: 3rem 5%;
 }
 
+section:nth-child(even) {
+  background: #f6f6f6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1.2rem 3rem;
+  color: #fff;
+  background: #263238;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: #44bb6a;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -137,6 +154,103 @@ section {
   color: #263238;
 }
 
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.home .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+}
+
+.home .content {
+  width: 45rem;
+}
+
+.home .content span {
+  color: #44bb6a;
+  font-size: 2rem;
+}
+
+.home .content h3 {
+  color: #263238;
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+.home .content h3 a {
+  color: #44bb6a;
+}
+
+.home .content h3 a:hover {
+  text-decoration: underline;
+}
+
+.home .content p {
+  font-size: 1.4rem;
+  color: #777;
+  padding-bottom: 1rem;
+  line-height: 2;
+}
+
+.info-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.info-container .box {
+  padding: 3rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.info-container .box i {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: #44bb6a;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.info-container .box h3 {
+  font-size: 1.7rem;
+  color: #263238;
+}
+
+.info-container .box p {
+  font-size: 1.5rem;
+  color: #777;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -158,6 +272,9 @@ section {
     width: 35rem;
     -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
             box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+  }
+  .home .content h3 {
+    font-size: 2.5rem;
   }
 }
 

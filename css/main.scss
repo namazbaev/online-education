@@ -47,6 +47,22 @@ body {
 }
 section {
     padding: 3rem 5%;
+    &:nth-child(even) {
+        background: $light-bg;
+    }
+}
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.2rem 3rem;
+    color: $white;
+    background: $black;
+    font-size: 1.7rem;
+
+    &:hover {
+        background: $green;
+    }
+    
 }
 .header {
     position: fixed;
@@ -130,6 +146,75 @@ section {
         color: $black;
     }
 }
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .image {
+        flex: 1 1 40rem;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        width: 45rem;
+        span {
+            color: $green;
+            font-size: 2rem;
+        }
+        h3 {
+            color: $black;
+            font-size: 3rem;
+            padding: 2rem 0;
+            a {
+                color: $green;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    p {
+        font-size: 1.4rem;
+        color: $light-color;
+        padding-bottom: 1rem;
+        line-height: 2;
+    }
+    }
+}
+.info-container {
+@include grid(25rem);
+.box {
+    padding: 3rem;
+    background: $white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    i {
+     height: 5rem;
+     width: 5rem;
+     line-height: 5rem;
+     font-size: 2rem;
+     border-radius: 50%;
+     background: $green;
+     color: $white;
+     text-align: center;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+    }
+    h3 {
+        font-size: 1.7rem;
+        color: $black;
+    }
+    p {
+        font-size: 1.5rem;
+        color: $light-color;
+    }
+}
+}
 
 
 
@@ -163,6 +248,9 @@ section {
             width: 35rem;
             box-shadow: 0 0 0 100vw rgba(0,0,0,.7);
         }
+    }
+    .home .content h3 {
+        font-size: 2.5rem;
     }
 }
 @media (max-width:450px) {
