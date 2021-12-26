@@ -51,6 +51,21 @@ section {
         background: $light-bg;
     }
 }
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    span {
+    font-size: 2rem;
+    color: $green;
+    text-transform: uppercase;
+    }
+    h3 {
+        padding-top: 1rem;
+        font-size: 3rem;
+        color: $black;
+        text-transform: uppercase;
+    }
+}
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -189,7 +204,8 @@ section {
     background: $white;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    border: $border;
 
     i {
      height: 5rem;
@@ -206,7 +222,8 @@ section {
      -o-border-radius: 50%;
     }
     h3 {
-        font-size: 1.7rem;
+        font-size: 2rem;
+        padding-bottom: .5rem;
         color: $black;
     }
     p {
@@ -214,6 +231,144 @@ section {
         color: $light-color;
     }
 }
+}
+.category {
+    .box-container {
+        @include grid (30rem);
+        .box {
+            text-align: center;
+            padding: 3rem 2rem;
+            border: $border;
+            &:hover i {
+                transform: translateY(-1rem);
+                -webkit-transform: translateY(-1rem);
+                -moz-transform: translateY(-1rem);
+                -ms-transform: translateY(-1rem);
+                -o-transform: translateY(-1rem);
+            }
+            i {
+                height: 5.5rem;
+                width: 5.5rem;
+                line-height: 5.5rem;
+                font-size: 2rem;
+                border-radius: .5rem;
+                color: $white;
+                background: $green;
+                margin-bottom: 1.5rem;
+                -webkit-border-radius: .5rem;
+                -moz-border-radius: .5rem;
+                -ms-border-radius: .5rem;
+                -o-border-radius: .5rem;
+            }
+            h3 {
+                font-size: 2rem;
+                color: $black;
+                padding-bottom: 1.5rem;
+            }
+            p {
+                font-size: 1.4rem;
+                color: $light-color;
+                list-style: 2;
+            }
+        }
+    }
+}
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .image {
+        flex: 1 1 40rem;
+    img {
+        width: 100%;
+    }
+    }
+    .content {
+        width: 40rem;
+        span {
+            font-size: 2rem;
+            color: $green;
+        }
+        h3 {
+            padding-top: 2rem;
+            font-size: 2.4rem;
+            color: $black;
+        }
+        p {
+            padding: 1.5rem 0;
+            line-height: 2;
+            font-size: 1.4rem;
+            color: $light-color;
+        }
+    }
+    
+}
+.courses {
+    .box-container {
+        @include grid(30rem);
+        .box {
+            position: relative;
+            padding: 2rem;
+            border: $border;
+            overflow: hidden;
+            text-align: center;
+            
+            &:hover .content{
+                opacity: 1;
+            }
+
+            .image {
+
+                img {
+                    width: 100%;
+                }
+                h3 {
+                    font-size: 2rem;
+                    color: $black;
+                    // padding: 2rem;
+                    font-weight: normal;
+                    padding-bottom: 1rem;
+                }
+            }
+            .content {
+                position: absolute;
+                top: 0; left: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                background: $green;
+                padding: 2rem;
+                opacity: 0;
+
+                .stars {
+                    padding-bottom: 2rem;
+                    i {
+                        font-size: 1.7rem;
+                        color: $yellow;
+                    }
+                }
+                h3 {
+                    font-size: 2rem;
+                    color: $white;
+                }
+                p {
+                    font-size: 1.4rem;
+                    color: $white;
+                    padding: 1.5rem 0;
+                    line-height: 2;
+                }
+                .btn:hover {
+                    background: $yellow;
+                    color: $black;
+                }
+            }
+        }
+    }
 }
 
 

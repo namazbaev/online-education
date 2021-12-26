@@ -7,5 +7,5 @@ menu.onclick = function(){
 }
 window.onscroll = function(){
     menu.classList.remove('fa-times')
-    header.classList.toggle('active')
+    header.classList.remove('active')
 }
