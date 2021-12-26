@@ -370,6 +370,50 @@ section {
         }
     }
 }
+.pricing {
+    .box-container {
+        @include grid (30rem);
+        .box {
+            text-align: center;
+            padding: 2rem;
+            border: $border;
+            background: $white;
+
+            h3 {
+                font-size: 2rem;
+                color: $black;
+            }
+            img {
+                height: 20rem;
+            }
+            .amount {
+                font-size: 5rem;
+                color: $black;
+                span {
+                    font-size: 2.5rem;
+                }
+            }
+            .list {
+                padding: 1.5rem 0;
+                // text-align: left;
+                p {
+                padding: 1rem 0;
+                font-size: 1.5rem;
+                color: $light-color;
+
+                i {
+                    color: $green;
+                    padding-right: .5rem;
+
+                    &.fa-times {
+                        color: red;
+                    }
+                }
+                }
+            }
+        }
+    }
+}
 
 
 

@@ -445,6 +445,58 @@ section:nth-child(even) {
   color: #263238;
 }
 
+.pricing .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.pricing .box-container .box {
+  text-align: center;
+  padding: 2rem;
+  border: 0.1rem solid #999;
+  background: #fff;
+}
+
+.pricing .box-container .box h3 {
+  font-size: 2rem;
+  color: #263238;
+}
+
+.pricing .box-container .box img {
+  height: 20rem;
+}
+
+.pricing .box-container .box .amount {
+  font-size: 5rem;
+  color: #263238;
+}
+
+.pricing .box-container .box .amount span {
+  font-size: 2.5rem;
+}
+
+.pricing .box-container .box .list {
+  padding: 1.5rem 0;
+}
+
+.pricing .box-container .box .list p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.pricing .box-container .box .list p i {
+  color: #44bb6a;
+  padding-right: .5rem;
+}
+
+.pricing .box-container .box .list p i.fa-times {
+  color: red;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
