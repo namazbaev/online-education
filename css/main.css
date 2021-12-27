@@ -95,6 +95,7 @@ section:nth-child(even) {
 
 .header .logo i {
   color: #ff0;
+  margin-right: 0.5rem;
 }
 
 .header .navbar {
