@@ -1,2 +1,1 @@
-# online-education
-https://shakxzod-online-edus.netlify.app/
+https://shakxzod-online-edus.netlify.app
