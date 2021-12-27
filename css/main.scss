@@ -79,6 +79,7 @@ section {
     }
     
 }
+
 .header {
     position: fixed;
     top: 0; left: 0;
@@ -477,7 +478,7 @@ section {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-
+                
                 input {
                     width: 49%;
                 }
@@ -494,6 +495,103 @@ section {
                 width: 100%;
                 resize: none;
                 height: 15rem;
+            }
+        }
+    }
+}
+.reviews {
+    .box-container {
+        @include grid(30rem);
+
+        .box {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: $white;
+            border: $border;
+
+            img {
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+                margin-bottom: .5rem;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            h3 {
+                font-size: 2rem;
+                color: $black;
+            }
+            p {
+                line-height: 2;
+                padding: 2rem 0;
+                font-size: 1.3rem;
+                color: $light-color;
+            }
+            .stars {
+                i {
+                    font-size: 1.7rem;
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+.blogs {
+    .box-container {
+    @include grid (30rem);
+        .box {
+            text-align: center;
+            padding: 2rem;
+            border: $border;
+            &:hover img {
+                transform: translateY(-1rem);
+                -webkit-transform: translateY(-1rem);
+                -moz-transform: translateY(-1rem);
+                -ms-transform: translateY(-1rem);
+                -o-transform: translateY(-1rem);
+}
+            img {
+                height: 20rem;
+            }
+            .title {
+                color: $black;
+                display: block;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .blog-description {
+                padding: 1rem 0;
+                font-size: 1.4rem;
+                color: $light-color;
+                line-height: 2;
+            }
+            .icons {
+                padding-top: 1.7rem;
+                margin-top: 1.5rem;
+                border-top: $border;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    font-size: 1.4rem;
+                    color: $light-color;
+                    i {
+                        padding-right: .5rem;
+                        color: $green;
+                    }
+                }
+                a {
+                    font-size: 1.4rem;
+                    color: $black;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }

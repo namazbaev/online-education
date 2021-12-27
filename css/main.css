@@ -596,6 +596,127 @@ section:nth-child(even) {
   height: 15rem;
 }
 
+.reviews .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.reviews .box-container .box {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+  border: 0.1rem solid #999;
+}
+
+.reviews .box-container .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.reviews .box-container .box h3 {
+  font-size: 2rem;
+  color: #263238;
+}
+
+.reviews .box-container .box p {
+  line-height: 2;
+  padding: 2rem 0;
+  font-size: 1.3rem;
+  color: #777;
+}
+
+.reviews .box-container .box .stars i {
+  font-size: 1.7rem;
+  color: #44bb6a;
+}
+
+.blogs .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.blogs .box-container .box {
+  text-align: center;
+  padding: 2rem;
+  border: 0.1rem solid #999;
+}
+
+.blogs .box-container .box:hover img {
+  transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  -moz-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  -o-transform: translateY(-1rem);
+}
+
+.blogs .box-container .box img {
+  height: 20rem;
+}
+
+.blogs .box-container .box .title {
+  color: #263238;
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.blogs .box-container .box .title:hover {
+  text-decoration: underline;
+}
+
+.blogs .box-container .box .blog-description {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #777;
+  line-height: 2;
+}
+
+.blogs .box-container .box .icons {
+  padding-top: 1.7rem;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogs .box-container .box .icons p {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.blogs .box-container .box .icons p i {
+  padding-right: .5rem;
+  color: #44bb6a;
+}
+
+.blogs .box-container .box .icons a {
+  font-size: 1.4rem;
+  color: #263238;
+}
+
+.blogs .box-container .box .icons a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
